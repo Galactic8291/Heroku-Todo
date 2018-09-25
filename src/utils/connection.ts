@@ -10,7 +10,10 @@ export const create = async () => {
       name: 'default',
       type: 'postgres',
       logging: true,
-      entities: [ Todo ]
+      entities: [ Todo ],
+      extra: {
+        ssl: true
+      }
     })
   } else {
     const connectionOptions = await getConnectionOptions(env)
