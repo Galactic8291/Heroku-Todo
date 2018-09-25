@@ -1,0 +1,19 @@
+{
+  "name": "heroku-todo-list",
+  "version": "1.0.0",
+  "description": "Heroku Todo-List",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --colors"
+  },
+  "keywords": [
+    "Heroku",
+    "Todo-List",
+    "Typescript",
+    "TypeORM",
+    "GraphQL",
+    "Apollo"
+  ],
+  "author": "Robbie McClellan",
+  "license": "ISC"
+}
