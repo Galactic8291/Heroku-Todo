@@ -9,6 +9,7 @@ export const create = async () => {
     return createConnection({
       name: 'default',
       type: 'postgres',
+      url: process.env.DATABASE_URL,
       logging: true,
       entities: [ Todo ],
       extra: {
