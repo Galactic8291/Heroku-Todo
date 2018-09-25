@@ -16,8 +16,7 @@ const server = new ApolloServer({
 })
 
 create().then(conn => {
-
-  server.listen().then(({ url }) => {
+  server.listen(process.env.PORT || 4000).then(({ url }) => {
     console.log(`🚀 Server ready at ${url}`)
     if(process.env.NODE_ENV !== 'test') conn.runMigrations()
   })
