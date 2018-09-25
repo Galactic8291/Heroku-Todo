@@ -4,7 +4,10 @@
   "description": "Heroku Todo-List",
   "main": "index.js",
   "scripts": {
-    "test": "jest --colors"
+    "test": "jest --colors",
+    "dev": "cross-env NODE_ENV=development ts-node -r tsconfig-paths/register src/index.ts",
+    "dev:js": "cross-env NODE_ENV=production node -r ./config.js build/index.js",
+    "postinstall": "tsc"
   },
   "keywords": [
     "Heroku",
