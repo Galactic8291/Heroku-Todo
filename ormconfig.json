@@ -9,13 +9,13 @@
     "database": "Heroku-Todo-List",
     "synchronize": false,
     "logging": true,
-    "entities": ["src/entity/**/*.ts"],
-    "migrations": ["src/migration/**/*.ts"],
-    "subscribers": ["src/subscriber/**/*.ts"],
+    "entities": ["src/db/entity/**/*.ts"],
+    "migrations": ["src/db/migration/**/*.ts"],
+    "subscribers": ["src/db/subscriber/**/*.ts"],
     "cli": {
-      "entitiesDir": "src/entity",
-      "migrationsDir": "src/migration",
-      "subscribersDir": "src/subscriber"
+      "entitiesDir": "src/db/entity",
+      "migrationsDir": "src/db/migration",
+      "subscribersDir": "src/db/subscriber"
     }
   },
   {
@@ -29,13 +29,13 @@
     "synchronize": true,
     "logging": false,
     "dropSchema": true,
-    "entities": ["src/entity/**/*.ts"],
-    "migrations": ["src/migration/**/*.ts"],
-    "subscribers": ["src/subscriber/**/*.ts"],
+    "entities": ["src/db/entity/**/*.ts"],
+    "migrations": ["src/db/migration/**/*.ts"],
+    "subscribers": ["src/db/subscriber/**/*.ts"],
     "cli": {
-      "entitiesDir": "src/entity",
-      "migrationsDir": "src/migration",
-      "subscribersDir": "src/subscriber"
+      "entitiesDir": "src/db/entity",
+      "migrationsDir": "src/db/migration",
+      "subscribersDir": "src/db/subscriber"
     }
   }
 ]
