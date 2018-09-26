@@ -9,6 +9,7 @@ import { Todo } from 'db/entity/Todo'
 
 const server = new ApolloServer({
   playground: true,
+  introspection: true,
   typeDefs: schema,
   resolvers,
   context: {
