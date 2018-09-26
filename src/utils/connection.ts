@@ -12,6 +12,7 @@ export const create = async () => {
       url: process.env.DATABASE_URL,
       logging: true,
       entities: [ Todo ],
+      migrations: [ 'build/db/migrations/**/*.js' ],
       extra: {
         ssl: true
       }
