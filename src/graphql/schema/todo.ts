@@ -13,7 +13,7 @@ export const todo = gql`
   }
   extend type Mutation {
     createTodo(item: String!): Todo!
-    updateTodo(item: String, completed: Boolean): Todo!
+    updateTodo(id: String, item: String, completed: Boolean): Todo!
     deleteTodo(id: ID!): Boolean!
   }
 `

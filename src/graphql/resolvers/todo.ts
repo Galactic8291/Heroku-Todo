@@ -18,7 +18,7 @@ export const todo: ResolverMap = {
       return todo
     },
     updateTodo: async (_, { id, ...args }, { Todo }) => {
-      await Todo.update({ id, args })
+      await Todo.update(id, args)
       return await Todo.findOne(id)
     },
     deleteTodo: async (_, { id }, { Todo }) => {
